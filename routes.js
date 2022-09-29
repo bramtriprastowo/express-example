@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 router.get("/", (req, res) => {
-  res.sendFile("index.html", { root: __dirname });
+  res.sendFile("public/index.html", { root: __dirname });
 });
 
 router.get("/json", (req, res) => {
