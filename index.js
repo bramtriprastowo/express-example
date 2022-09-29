@@ -7,7 +7,6 @@ const path = require("path");
 app.use(log);
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.use(express.static("./public"));
 app.use(router);
 app.use((req, res, next) => {
     res.status(404);
